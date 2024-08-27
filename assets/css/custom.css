@@ -10,6 +10,29 @@
     color: #F76934;
 }
 
+.p-index-strength__heading-l span {
+    font-size: 60px;
+}
+
+@media (max-width:575px) {
+    .p-index-strength__heading-l span {
+        font-size: 30px;
+    }
+}
+
+#p-strength .p-index-strength__body {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+@media (max-width:575px) {
+    .p-index-strength__body {
+        padding-top: 30px;
+        font-size: 13px;
+    }
+}
+
 
 /* .p-index-hero__catch-strs span {
     font-family: 'Snell Roundhand';
@@ -23,8 +46,12 @@
     color: #F76934;
 }
 
+.__red {
+    color: #F76934!important;
+}
+
 .__white {
-    color: white;
+    color: white!important;
 }
 
 .__black {

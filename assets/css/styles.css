@@ -3323,8 +3323,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    border-color: #727171;
-    background-color: #727171;
+    border-color: #F76934;
+    background-color: #F76934;
     color: #fff
 }
 
@@ -10214,6 +10214,13 @@ html.has-scroll-dragging {
     font-size: .875rem;
     line-height: 150%;
     content: "0" counter(numbering)
+}
+
+#p-recruit .c-numbering__title:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .wp-pagenavi {
@@ -18119,8 +18126,8 @@ html.has-scroll-dragging {
 }
 
 #l-footer .l-footer__bg {
-    min-height: calc(100vh + 100px);
-    padding: 180px 0 30px;
+    height: auto;
+    padding: 0 0 30px;
     background: linear-gradient(180deg, #292623, #22201d);
     color: #fff
 }
@@ -20342,11 +20349,47 @@ html.has-scroll-dragging {
     content: ""
 }
 
+#p-service #p-index-voice .p-index-voice__wrapper {
+    position: relative;
+    background: linear-gradient(180deg, #292623, #22201d);
+    color: #fff
+}
+
+#p-service #p-index-voice .p-index-voice__wrapper a {
+    color: #fff
+}
+
+#p-service #p-index-voice .p-index-voice__wrapper:before {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F76934;
+    content: ""
+}
+
 @media (min-width:992px) {
     #p-index #p-index-voice.c-blog-list:before {
         background: #F76934;
     }
     #p-index #p-index-voice.c-blog-list:after {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(26.25% + 10px);
+        height: 100%;
+        background: #F76934;
+    }
+}
+
+@media (min-width:992px) {
+    #p-service #p-index-voice.c-blog-list:before {
+        background: #F76934;
+    }
+    #p-service #p-index-voice.c-blog-list:after {
         z-index: 2;
         position: absolute;
         top: 0;
@@ -20424,6 +20467,102 @@ html.has-scroll-dragging {
     }
 }
 
+#p-service #p-index-voice .c-blog-list__wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px
+}
+
+@media (max-width:575px) {
+    #p-service #p-index-voice .c-blog-list__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+#p-service #p-index-voice .c-blog-list__wrapper:before {
+    top: 120px;
+    background-color: #F8F9F9
+}
+
+@media (max-width:575px) {
+    #p-service #p-index-voice .c-blog-list__wrapper:before {
+        top: 60px
+    }
+}
+
+#p-service #p-index-voice .c-blog-list__wrapper:after {
+    bottom: 120px;
+    background-color: #F8F9F9
+}
+
+@media (max-width:575px) {
+    #p-service #p-index-voice .c-blog-list__wrapper:after {
+        bottom: 60px
+    }
+}
+
+#p-service #p-index-voice .c-blog-list__heading:after {
+    background-color: #F8F9F9
+}
+
+#p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+    font-size: 3.75rem;
+    line-height: 1
+}
+
+@media (max-width:1400px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.8125rem
+    }
+}
+
+@media (max-width:1199px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width:575px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.625rem
+    }
+}
+
+@media (max-width:374px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2rem
+    }
+}
+
+#p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+    font-size: 3.75rem;
+    line-height: 1
+}
+
+@media (max-width:1400px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.8125rem
+    }
+}
+
+@media (max-width:1199px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width:575px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2.625rem
+    }
+}
+
+@media (max-width:374px) {
+    #p-service #p-index-voice .p-index-voice__title .c-section-title__en {
+        font-size: 2rem
+    }
+}
+
 #p-index #p-index-voice .c-blog-list__controls .l-bloglist-slider-next,
 #p-index #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev {
     border: 1px solid #F8F9F9
@@ -20454,6 +20593,39 @@ html.has-scroll-dragging {
 
 #p-index #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:active,
 #p-index #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:active {
+    background-color: #727171
+}
+
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev {
+    border: 1px solid #F8F9F9
+}
+
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev svg {
+    fill: #fff
+}
+
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:active,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:focus,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:hover,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:active,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:focus,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:hover {
+    border-color: #fff
+}
+
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:active svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:focus svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:hover svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:active svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:focus svg,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:hover svg {
+    fill: #fff
+}
+
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-next:active,
+#p-service #p-index-voice .c-blog-list__controls .l-bloglist-slider-prev:active {
     background-color: #727171
 }
 
@@ -21185,7 +21357,7 @@ html.has-scroll-dragging {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: linear-gradient(180deg, #292623, #22201d);
+    background: #F76934;
     color: #fff
 }
 
@@ -21493,7 +21665,7 @@ html.has-scroll-dragging {
     padding-top: 300px;
     padding-bottom: 300px;
     overflow: hidden;
-    background: linear-gradient(180deg, #292623, #22201d)
+    background: #F76934;
 }
 
 #p-recruit #entry-btn .entry-btn__bg--noize {
