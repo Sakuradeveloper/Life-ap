@@ -18163,7 +18163,8 @@ html.has-scroll-dragging {
     z-index: 2;
     position: relative;
     flex-direction: column;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    height: max-content;
     padding-bottom: 30px
 }
 

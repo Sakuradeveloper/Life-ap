@@ -157,3 +157,44 @@
     width: max-content;
     margin: auto;
 }
+
+.l-social_icon {
+    width: max-content!important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.l-social_icon a img {
+    width: 30px;
+}
+
+.l-social_icon-drawer {
+    width: max-content!important;
+    padding-top: 15px;
+}
+
+.l-social_icon-drawer a img {
+    width: 30px;
+}
+
+/* Ensure the parent li is relatively positioned */
+.l-gnav__item {
+    position: relative; /* This makes the absolute positioning of the submenu relative to this item */
+}
+
+.l-gnav__item .submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: max-content;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.l-gnav__item:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
