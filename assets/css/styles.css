@@ -18578,9 +18578,10 @@ html.has-scroll-dragging {
 #l-header {
     z-index: 1000;
     position: fixed;
-    top: 5px;
     left: 0;
-    width: 100%
+    width: 100%;
+    transition: background-color 2s;
+    background-color: initial; 
 }
 
 @media (max-width:991px) {
