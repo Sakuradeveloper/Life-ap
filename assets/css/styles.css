@@ -18593,7 +18593,8 @@ html.has-scroll-dragging {
 
 #l-header #l-header__bg {
     position: relative;
-    padding-right: 120px
+    padding-right: 120px;
+    background-color: white;
 }
 
 @media (max-width:991px) {
