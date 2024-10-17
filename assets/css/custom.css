@@ -1,0 +1,200 @@
+@import url(../font/SnellBT-Regular.otf);
+@font-face {
+    font-family: 'Snell Roundhand';
+    src: url('../font/SnellBT-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p-index-strength__heading-l {
+    color: #F76934;
+}
+
+.p-index-strength__heading-l span {
+    font-size: 60px;
+}
+
+@media (max-width:575px) {
+    .p-index-strength__heading-l span {
+        font-size: 30px;
+    }
+}
+
+#p-strength .p-index-strength__body {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+@media (max-width:575px) {
+    .p-index-strength__body {
+        padding-top: 30px;
+        font-size: 13px;
+    }
+}
+
+
+/* .p-index-hero__catch-strs span {
+    font-family: 'Snell Roundhand';
+} */
+
+.c-section-title__en {
+    color: #F76934;
+}
+
+.for_color span {
+    color: #F76934;
+}
+
+.__red {
+    color: #F76934!important;
+}
+
+.__white {
+    color: white!important;
+}
+
+.__black {
+    color: #270d04!important;
+}
+
+.c-blog__card--time {
+    color: white;
+}
+
+.l-header__logo--link img {
+    width: 125px;
+}
+
+.c-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media (max-width:575px) {
+    .c-contact {
+        flex-direction: column;
+    }
+}
+
+.c-contact .__career {
+    background-image: url(../img/main/bg-recruit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.c-contact .__career:hover {
+    opacity: 0.8;
+}
+
+.c-contact .__career .__career-ttl .__career-ttl_en {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+
+.c-contact .__career .__career-ttl .__career-ttl_ja {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.c-contact .__career .__career-ctn {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.c-contact .__contact {
+    background-image: url(../img/main/bg-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.c-contact .__contact:hover {
+    opacity: 0.8;
+}
+
+.c-contact .__contact .__contact-ttl .__contact-ttl_en {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+
+.c-contact .__contact .__contact-ttl .__contact-ttl_ja {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.c-contact .__contact .__contact-ctn {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.c-contact__more {
+    width: max-content;
+    margin: auto;
+}
+
+.l-social_icon {
+    width: max-content!important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.l-social_icon a img {
+    width: 30px;
+}
+
+.l-social_icon-drawer {
+    width: max-content!important;
+    padding-top: 15px;
+}
+
+.l-social_icon-drawer a img {
+    width: 30px;
+}
+
+/* Ensure the parent li is relatively positioned */
+.l-gnav__item {
+    position: relative; /* This makes the absolute positioning of the submenu relative to this item */
+}
+
+.l-gnav__item .submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: max-content;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.l-gnav__item:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
